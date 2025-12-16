@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue'
-import { useFetch } from '@/composables/useFetch'
+import { useFetch } from '@/composable/useFetch.js'
 
-const url = ref('http://localhost:3000/api/products')
+const url = ref('http://localhost:3000/products/api/products')
 
 const { data: products, error, loading } = useFetch(url)
 </script>
